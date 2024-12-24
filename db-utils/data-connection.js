@@ -14,6 +14,6 @@ export const connectViaMongoose = async () => {
     }
     catch (e) {
         console.log("Error in connecting", e);
-        process.exit(1);
+        process.exit();
     }
 };
