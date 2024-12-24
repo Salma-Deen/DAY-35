@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const host = "127.0.0.1:27017";
-const dbName = "Localdb";
+const dbName = "task3";
 
 const localDbUrl = `mongodb://${host}/${dbName}`;
 export const connectViaMongoose = async () => {
@@ -14,6 +14,6 @@ export const connectViaMongoose = async () => {
     }
     catch (e) {
         console.log("Error in connecting", e);
-        process.exit();
+        process.exit(1);
     }
 };
