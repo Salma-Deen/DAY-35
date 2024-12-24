@@ -1,0 +1,19 @@
+{
+  "name": "day-35",
+  "version": "1.0.0",
+  "description": "",
+  "type":"module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.9.2",
+    "uuid": "^11.0.3"
+  }
+}
