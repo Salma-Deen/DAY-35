@@ -3,12 +3,13 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const url="mongodb://127.0.0.1:27017";
-const dbName="task3";
+const host = "127.0.0.1:27017";
+const dbName = "Localdb";
 
+const localDbUrl = `mongodb://${host}/${dbName}`;
 export const connectViaMongoose = async () => {
     try {
-        await mongoose.connect(`${url}/${dbName}`);
+        await mongoose.connect(localDbUrl);
         console.log("Connected to DB via Mongoose");
     }
     catch (e) {
